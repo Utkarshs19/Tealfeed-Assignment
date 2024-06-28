@@ -4,6 +4,7 @@ import CodeEditor from './CodeEditor';
 
 const App = () => {
   return (
+    // To style a CodeEditor
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
       <div>
         <h1>Simple Code Editor</h1>

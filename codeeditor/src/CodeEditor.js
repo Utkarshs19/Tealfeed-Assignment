@@ -1,9 +1,13 @@
+// Import all the necessary dependencies.
+
 import React, { useState } from 'react';
 import { Highlight, themes } from 'prism-react-renderer';
 import Prism from 'prismjs';
 import 'prismjs/themes/prism.css';
 import 'prismjs/themes/prism-okaidia.css';
 
+
+// Inside a code editor box a simple react code 
 const CodeEditor = () => {
   const [code, setCode] = useState(
     `import React from 'react';
@@ -25,6 +29,7 @@ ReactDOM.render(<App />, document.getElementById('root'));`
     setCode(event.target.value);
   };
 
+//   For styling a CodeEditor
   return (
     <div style={{ position: 'relative', width: '500px', height: '300px' }}>
       <textarea
@@ -52,6 +57,7 @@ ReactDOM.render(<App />, document.getElementById('root'));`
           overflowWrap: 'break-word',
         }}
       />
+     {/* For dark theme */}
       <Highlight theme={themes.vsDark} code={code} language="jsx">
         {({ tokens, getLineProps, getTokenProps }) => (
           <pre
@@ -68,6 +74,7 @@ ReactDOM.render(<App />, document.getElementById('root'));`
               width: '100%',
             }}
           >
+            {/* For mapping */}
             {tokens.map((line, i) => (
               <div key={i} {...getLineProps({ line, key: i })}>
                 {line.map((token, key) => (
