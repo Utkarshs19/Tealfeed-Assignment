@@ -7,7 +7,7 @@ const App = () => {
     // To style a CodeEditor
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
       <div>
-        <h1>Simple Code Editor</h1>
+        <h1>Code Editor</h1>
         <CodeEditor />
       </div>
     </div>
