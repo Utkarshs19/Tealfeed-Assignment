@@ -2,7 +2,6 @@ TealFeed Assignment
 
 Full Stack Engineer Assignment
 
-Deployed link :- 
 
 How to run 
 
